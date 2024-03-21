@@ -1,9 +1,11 @@
 extends CanvasLayer
 
-var money = 0
+var money = 0;
 @onready var moneylabel = $Control/MarginContainer/HBoxContainer/MoneyLabel
 @onready var icon = load("res://Assets/icon.svg")
-@onready var item = $Control/MarginContainer/Item1
+@onready var item1 = $Control/MarginContainer/Item1
+@onready var item2 = $Control/MarginContainer/Item2
+@onready var item3 = $Control/MarginContainer/Item3
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,11 +19,5 @@ func update_money(change):
 	money = money+change
 	moneylabel.text = "Money: " + str(money)
 
-func _on_item_1_bought_item():
-	update_money(-100)
-
-func _on_item_2_bought_item():
-	update_money(-200)
-
-func _on_item_3_bought_item():
-	update_money(-300)
+func bought_item(money):
+	update_money(-money)

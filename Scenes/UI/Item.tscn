@@ -38,7 +38,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 
 [node name="Sprite2D" type="Sprite2D" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
-position = Vector2(40.5, -76)
+position = Vector2(45.5, -75)
 texture = ExtResource("2_3fep4")
 
 [node name="Label" type="Label" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
@@ -48,5 +48,8 @@ text = "Price: "
 [node name="Button" type="Button" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 text = "Buy"
+
+[node name="Node" type="Node" parent="Control/MarginContainer/VBoxContainer/HBoxContainer"]
+metadata/ID = 0
 
 [connection signal="pressed" from="Control/MarginContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]

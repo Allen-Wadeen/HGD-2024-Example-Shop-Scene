@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scenes/ItemShop.gd" id="1_ed3xk"]
 [ext_resource type="PackedScene" uid="uid://btqmnmpytpfkq" path="res://Scenes/UI/Item.tscn" id="2_3qixg"]
 
-[node name="ItemShop" type="CanvasLayer" groups=["Items"]]
+[node name="ItemShop" type="CanvasLayer"]
 script = ExtResource("1_ed3xk")
 
 [node name="Control" type="Control" parent="."]

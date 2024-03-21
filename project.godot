@@ -14,3 +14,7 @@ config/name="Test Shop Scene"
 run/main_scene="res://Scenes/world.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://Assets/icon.svg"
+
+[autoload]
+
+ItemStorage="*res://item_storage.gd"
